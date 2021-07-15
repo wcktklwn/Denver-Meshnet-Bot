@@ -16,7 +16,7 @@ bind pub - "?" meshnet:info
 proc meshnet:info {nick host handle chan arg} {
 	if {$chan == "#denvermeshnet"} {
 		if {[lindex $arg 0] == "contact"} {
-			putserv "NOTICE $nick :If you find that we are not responding fast enough in IRC, you can email my owner at: denvermeshnet@h4x0.red"
+			putserv "NOTICE $nick :If you find that we are not responding fast enough in IRC, you can email my owner at: irc@denvermesh.net"
 			return 0
 		} elseif {[lindex $arg 0] == "peer"} {
 			putserv "NOTICE $nick :To get peered send me a secure email using 0x0763A3AF. I will need information similar to the following link:"
